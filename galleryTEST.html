@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-    , initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: rgb(250, 250, 250);
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+          
+            background-color:  rgb(250, 250, 250);
+
+       
+        }
+
+     
+
+        .card1 {
+            flex: 1.25;
+            height: 85vh;
+            background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgba(0, 0, 0, 0.922));
+            border-style: ;
+            margin-left: 5px;
+            margin-right: 5px;
+            color: antiquewhite;
+        }
+
+        @media screen and (max-width:750px) {
+            .card1 {
+                height: 40vh;
+            }
+        }
+
+
+        .card1content {
+            display: grid;
+            margin: 20px;
+        }
+        .card2 {
+            flex: 1.4;
+            height: 85vh;
+            background-color: #d6e6ff;
+            border-color: black;
+            margin-left: 5px;
+            margin-right: 5px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-style: solid;
+            border-width: 0px;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            overflow-y: scroll;
+
+
+        }
+
+        .card2::-webkit-scrollbar{
+            width: 0%;
+            height: 0%;
+        }
+
+        .card2content {
+            width: 200px;
+            margin: 20px;
+            margin-right: 40px;
+            border-radius: 50%;
+            justify-content: center;
+            align-content: center;
+
+        }
+
+        .card3 {
+            flex: 2;
+            height: 85vh;
+            background-color: ;
+            border-style: solid;
+            border-width: 1.3px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+            overflow-y: scroll;
+            
+        }
+
+        .card3::-webkit-scrollbar{
+            width: 0%;
+            height: 0%;
+        }
+
+        .card3content {
+            display:grid;
+            
+        }
+
+        .card3contentinner {
+            display: flex;
+            border-color: rgba(0, 0, 0, 0);
+            border-style: groove;
+        }
+
+        .card3contentinner:hover {
+           
+            background-color: rgba(240, 240, 240, 0.637);
+        }
+
+        .card3text {
+            margin: 20px;
+            width: 70%  ;
+        }
+
+        .card3image1 {
+            width:160px;
+            height: 175px;
+            border-width: 2px;
+            border-radius: 50%;
+            margin: 20px;
+            background-color: rgba(251, 41, 58, 0);
+            box-shadow: 2px 3px 14px  rgba(54, 255, 255, 0.548);
+        }
+
+        .card3image2 {
+            width:150px;
+            height: 150px;
+            border-width: 2px;
+            margin: 20px;
+        }
+
+        .card4 {
+            flex: 0.2;
+            height: 85vh;
+            background-color: ;
+            border-style: ;
+            margin-left: 5px;
+            margin-right: 5px;
+            display: grid;
+        }
+        
+        .card1:hover {
+            flex: 1.5;
+            transition: 1s ease-out;
+            height: 88vh;
+        }
+        
+        .card2:hover {
+            flex: 1.6;
+            transition: 1s ease-out;
+            
+        }
+
+      
+        
+        .card3:hover {
+            flex: 2.1;
+            transition: 1s ease-out;
+           
+        }
+
+        .card4:hover {
+            flex: 0.3;
+            transition: 0.2s ease-out;
+        }
+
+
+        .card1titleContainer {
+            width:200px
+        }
+
+        .card1title {
+            font-family: monospace;
+            color: rgb(245, 240, 234);
+            font-size: 40px;
+            margin-left: 7%;
+            transition: 1.5s ease-out;
+        }
+        .card1title:hover {
+            width: 100%;
+        }
+
+        .video {
+            width: 70%;
+            height:20%
+        }
+
+        .link1 {
+            text-align: right;
+            margin-right: 11px;
+            font-family: monospace;
+            font-size: 11px;
+            size: 20px;
+            align-items: center;
+            justify-items: center;
+            display: grid;
+            border-color: rgba(240, 255, 255, 0.333);
+            border-style: groove;
+            border-bottom-left-radius: 10px;
+
+        }
+
+        .link1:hover {
+            font-size:12px;
+            border-color: azure;
+            border-style: groove;
+            border-bottom-left-radius: 10px;
+            align-items: center;
+            justify-items: center;
+            display: grid;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+    
+        <div class="card1">
+
+            <div class="card1titleContainer">
+                 <p class="card1title">
+                      gregory &nbspclayton.&nbsp
+                 </p>
+            </div>
+
+           <div class="card1content">
+
+            
+           <p>developer</p>
+           <p>writer</p>
+           <p>artist .</p>
+            
+
+           </div>
+
+        </div>
+
+        <div class="card2">
+           <div class="card2content">
+
+            <img class="card3image1" src="blue.png">
+
+           <p style="font-family: monospace;"> persedex</p>
+           <p style="font-family: monospace;"> a quick descriptin of ymself the eth eth rht rth rth rth rth rt hr th rth</p>
+           <p style="font-family: monospace;"> a quick descriptin of ymself the eth eth rht rth rth rth rth rt hr th rth</p>
+           <p style="font-family: monospace;"> a quick descriptin of ymself the eth eth rht rth rth rth rth rt hr th rth</p>
+           <p style="font-family: monospace;"> a quick descriptin of ymself the eth eth rht rth rth rth rth rt hr th rth</p>
+           <p style="font-family: monospace;"> a quick descriptin of ymself the eth eth rht rth rth rth rth rt hr th rth</p>
+           <p style="font-family: monospace;"> a quick descriptin of ymself the eth eth rht rth rth rth rth rt hr th rth</p>
+           <p style="font-family: monospace;"> a quick descriptin of ymself the eth eth rht rth rth rth rth rt hr th rth</p>
+           <p style="font-family: monospace;"> a quick descriptin of ymself the eth eth rht rth rth rth rth rt hr th rth</p>
+           <p style="font-family: monospace;"> a quick descriptin of ymself the eth eth rht rth rth rth rth rt hr th rth</p>
+           <p style="font-family: monospace;"> a quick descriptin of ymself the eth eth rht rth rth rth rth rt hr th rth</p>
+
+           <img class="card3image1" src="blue.png">
+         
+           <p style="font-family: monospace;"> a personal pokedex</p>
+           <p style="font-family: monospace;"> a quick descriptin of ymself the eth eth rht rth rth rth rth rt hr th rth</p>
+           <p style="font-family: monospace;"> a quick descriptin of ymself the eth eth rht rth rth rth rth rt hr th rth</p>
+           <p style="font-family: monospace;"> a quick descriptin of ymself the eth eth rht rth rth rth rth rt hr th rth</p>
+           <p style="font-family: monospace;"> a quick descriptin of ymself the eth eth rht rth rth rth rth rt hr th rth</p>
+           <p style="font-family: monospace;"> a quick descriptin of ymself the eth eth rht rth rth rth rth rt hr th rth</p>
+           <p style="font-family: monospace;"> a quick descriptin of ymself the eth eth rht rth rth rth rth rt hr th rth</p>
+           <p style="font-family: monospace;"> a quick descriptin of ymself the eth eth rht rth rth rth rth rt hr th rth</p>
+           <p style="font-family: monospace;"> a quick descriptin of ymself the eth eth rht rth rth rth rth rt hr th rth</p>
+           <p style="font-family: monospace;"> a quick descriptin of ymself the eth eth rht rth rth rth rth rt hr th rth</p>
+           <p style="font-family: monospace;"> a quick descriptin of ymself the eth eth rht rth rth rth rth rt hr th rth</p>
+           </div> 
+        </div>
+      
+        <div class="card3">
+           <div class="card3content" id="card3inner">
+
+                <div class="card3contentinner">
+                    <img class="card3image1" src="blue.png""> 
+                    <p class="card3text">
+                        the ethert ert ert ert ert ert ert er 
+                    ter te rt ert ert ert ert ert er tr ert ert ert erte rte rt er terterter t eth
+                    </p>
+                  
+                </div>
+
+                <div class="card3contentinner">
+                    <p class="card3text">the e er ert edfg dfgdfgdfgd dfgfd fdg fdfg fdg  df gf dfdgf dfgd g  df gfdg dfgdf gdfg dfgdfgdfg dfgrt ert ert</p>
+                     <img class="card3image2" src="">
+                </div>
+
+                <div class="card3contentinner">
+                    <p>the e er ert edfg dfgdfgdfgd dfg dfgdf gdfg dfgdfgdfg dfgrt ert ert</p>
+                     <img class="card3image2" src="">
+                </div>
+
+                <div class="card3contentinner">
+                    <p>the e er ert edfg dfgdfgdfgd dfg dfgdf gdfg dfgdfgdfg dfgrt ert ert</p>
+                     <img class="card3image2" src="">
+                </div>
+              
+
+
+           </div>
+        </div>
+
+        <div class="card4">
+      
+           <p class="link1" id="l1"> projects</p>
+            <p class="link1" id="l2">videos</p>
+            <p class="link1" id="l3">books</p>
+            <p class="link1" id="l4">contact</p>
+            <p></p>
+            <p></p>
+            <p></p>
+        
+        </div>
+        
+    </div>
+
+   <p> 2024 </p>
+
+   <script>
+
+    const b = document.getElementById('l1');
+    const conte = document.getElementById('card3inner');
+
+    function changeContent() {
+        conte.innerHTML =
+        '<divclass="card3contentinner"><img class="card3image1" src=""><p class="card3text"></p></div><div class="card3contentinner"><p class="card3text">the e er ert edfg dfgdfgdfgd dfgfd fdg fdfg fdg  df gf dfdgf dfgd g  df gfdg dfgdf gdfg dfgdfgdfg dfgrt ert ert</p><img class="card3image2" src=""></div><div class="card3contentinner"><p>the e er ert edfg dfgdfgdfgd dfg dfgdf gdfg dfgdfgdfg dfgrt ert ert</p><img class="card3image2" src="blue.png"></div><div class="card3contentinner"><p>the e er ert edfg dfgdfgdfgd dfg dfgdf gdfg dfgdfgdfg dfgrt ert ert</p><img class="card3image2" src=""></div>';
+    }
+
+    b.addEventListener('click', changeContent);
+
+   </script>
+
+
+
+<script>
+
+    const c = document.getElementById('l2');
+    const donte = document.getElementById('card3inner');
+
+    function changeContent() {
+        donte.innerHTML = '<div class="card3contentinner"><img class="card3image2"><p class="card3text">iii</p></div><div class="card3contentinner"><p class="card3text">iii theth wrt ert ert ert ert</p><img class="card3image2"></div><div class="card3contentinner"><p class="card3text">iii theth wrt ert ertd gfgd dfg dfdgdfg dfgdf gdgdgdfg dfgdfgfdg dd f dfgd ert ert</p><img class="card3image2"></div><div class="card3contentinner"><p class="card3text">iii theth wrt ert ert ert ert</p><img class="card3image2"></div>';
+    }
+
+    c.addEventListener('click', changeContent);
+    
+   </script>
+   
+   <script>
+
+    const d = document.getElementById('l3');
+    const eonte = document.getElementById('card3inner');
+
+    function changeContent() {
+        eonte.innerHTML = '<div class="card3contentinner"><p class="card3text">iii</p><img class="card3image2"></div><div class="card3contentinner"><p class="card3text">iii theth wrt ert ert ert ert</p><img class="card3image2"></div><div class="card3contentinner"><p class="card3text">iii theth wrt ert ertd gfgd dfg dfdgdfg dfgdf gdgdgdfg dfgdfgfdg dd f dfgd ert ert</p><img class="card3image2"></div><div class="card3contentinner"><p class="card3text">iii theth wrt ert ert ert ert</p><img class="card3image2"></div>';
+    }
+
+    d.addEventListener('click', changeContent);
+    
+   </script>
+
+<script>
+
+    const e = document.getElementById('l4');
+    const fonte = document.getElementById('card3inner');
+
+    function changeContent() {
+        fonte.innerHTML = '<div class="card3contentinner"><p class="card3text">iii</p><img class="card3image2"></div><div class="card3contentinner"><p class="card3text">iii theth wrt ert ert ert ert</p><img class="card3image2"></div><div class="card3contentinner"><p class="card3text">iii theth wrt ert ertd gfgd dfg dfdgdfg dfgdf gdgdgdfg dfgdfgfdg dd f dfgd ert ert</p><img class="card3image2"></div><div class="card3contentinner"><p class="card3text">iii theth wrt ert ert ert ert</p><img class="card3image2"></div>';
+    }
+
+    e.addEventListener('click', changeContent);
+    
+   </script>
+
+
+</body>
+</html>
