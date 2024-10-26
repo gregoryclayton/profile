@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .titleContainer {
+            width: 100%;
+            height: 34vh;
+            background-color: black;
+            transition: 1s ease-out;
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 10px;
+            display: flex;
+            color: #d6e6ff;
+            
+        }
+
+        @media screen and (max-width:1050px) {
+            .titleContainer {
+                height: 27vh;
+            }
+
+        }
+
+        @media screen and (max-width:500px) {
+            .endwrapper {
+                display: none;
+            }
+
+        }
+
+        @media screen and (max-width:1050px) {
+            .contentinnerimg {
+                width: 50px;
+                
+            }
+
+        }
+      
+        .titleContainer:hover {
+            width: 100%;
+            height: 35vh;
+            background-color: black;
+            transition: 1s ease-out;
+        }
+
+        .title {
+            color: white;
+            height: 40vh;
+            font-family: monospace;
+            font-size: 40px;
+            padding: 10px;
+            padding-left: 20px;
+            display: flex;
+        }
+
+        .bigContainer {
+            display: flex;
+        }
+
+        .featuresContainer {
+            display: grid;
+        }
+
+        .spinner {
+            
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            
+            transition: 0.5s;
+ background-color: ;
+            -webkit-animation: spin 30s infinite linear;
+
+        }
+
+        .spinner:hover {
+            box-shadow: 0px 0px 0px 0px rgba(132, 132, 132, 0.482);
+            transition: 1s;
+            
+        }
+
+        @-webkit-keyframes spin {
+            0% {-webkit-transform: rotate(0deg);}
+            100% {-webkit-transform: rotate(360deg);}
+        }
+
+        .info {
+            height: 40vh;
+            width: 43vw;
+            transition: 1s ease-out;
+            overflow-y: scroll;
+            text-align: center;
+        }
+
+        .info::-webkit-scrollbar {
+            width: 0%;
+            height: 0%;
+        }
+
+        .info:hover {
+            width: 50vw;
+            transition: 1s ease-out;
+        }
+
+        .three {
+            background-color: #d6e6ff;
+          width: 100%;
+          transition: 1s ease-out;
+          margin-top: 10px;
+          border-radius: 10px;
+          border-bottom-right-radius: 0px;
+          border-top-left-radius: ;
+          height: 56vh;
+          overflow-y: scroll;
+        }
+
+        .three::-webkit-scrollbar {
+            width: 0%;
+            height: 0%;
+        }
+
+        .content {
+           
+            background-color: rgb(255, 255, 255);
+            height: 19vh;
+            width: 43vw;
+            
+        }
+
+        .row1 {
+            display: flex;
+        }
+
+        .row2 {
+            display: flex;
+        }
+
+        
+
+        .subtitle1 {
+            background-color: rgba(255, 255, 255, 0);
+            height: 100%;
+            transition: 1s ease-out;
+            text-align: end;
+            width: 90%;
+            line-height: 25px;
+            color: #d6e6ff;
+            display: grid;
+            
+        }
+
+      
+
+        .button1 {
+            width: 50%;
+            height: 8vh;
+            border-style: solid;
+            border-width: 1px;
+            border-top-left-radius: 10px;
+            margin: 2px;
+            margin-right: 6px;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            font-family: monospace;
+            
+           
+        }
+
+        .button2 {
+            width: 50%;
+            height: 8vh;
+            border-style: solid;
+        
+            border-width: 1px;
+            margin: 2px;
+            margin-right: 10px;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            font-family: monospace;
+        }
+
+        .button3 {
+            width: 50%;
+            height: 8vh;
+            border-style: solid;
+         
+            border-width: 1px;
+            margin: 2px;
+            margin-right: 6px;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            font-family: monospace;
+            margin-top: 7px;
+        }
+
+        
+        .button4 {
+            width: 50%;
+            height: 8vh;
+            border-style: solid;
+            border-bottom-right-radius: 10px;
+            border-width: 1px;
+            margin: 2px;
+            margin-right: 10px;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            font-family: monospace;
+            margin-top: 7px;
+
+            
+        }
+
+        .button1:hover, .button2:hover, .button3:hover, .button4:hover{
+            background-color: rgb(198, 198, 198);
+        }
+
+        .buttonsContainer {
+            background-color: blue;
+        }
+
+        .buttons {
+            background-color: blue;
+            height: 50vh;
+        }
+
+        .contentinner {
+            height: 22vh;
+            padding-top: 15px;
+            padding-left: 6px;
+        }
+
+        .contentinnerimgcontainer {
+            display: flex;
+        }
+
+        .contentinnerimg {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 6px;
+            margin-left: 18px;
+        }
+
+        .contentinnertitle {
+
+        }
+
+        .contentinnerwords {
+
+        }
+
+        .contentinner:hover {
+            background-color: rgb(196, 196, 216);
+            
+        }
+
+
+    </style>
+
+<script>
+    function spinswitch() {
+        var d = document.querySelector("spinid");
+        d.innerHTML = "<div style="padding: 50px;">
+                
+    }
+</script>
+
+</head>
+
+<body>
+    
+<div class="container">
+
+    <div class="titleContainer">
+        <div class="title">gregory <br>&nbspclayton.&nbsp <p id="codes" style="color: white;"></p> <p id="dash"> |</p> </div>
+           
+          
+
+        
+    </div>
+
+
+   
+    <div class="bigContainer">
+    
+
+        <div class="featuresContainer">
+
+            <div class="info">
+
+                <div id="spinid">
+                <div style="padding: 50px;">
+                    <img src="C:\Users\grego\Desktop\pros\sitelayout\imgs\moon3.png" class="spinner" style="box-shadow: 2px 1px 10px 1px rgba(171, 171, 171, 0.482);"><br><br><br>
+                writer. developer. friend of the forest.<br> Canada born, raised, and living.<br><br>   
+                Javascript, php, python, c++. Java.
+                </div>
+                </div>
+
+            </div>
+
+            <div class="content">
+            
+                <div class="row1">
+                    <div class="button1">projects</div>
+                    <div class="button2">books</div>
+                </div>
+
+                <div class="row2">
+                    <div class="button3">videos</div>
+                    <div class="button4">contact</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="three">
+
+            <div class="contentinner">
+
+                <div class="contentinnerimgcontainer">
+                    <img class="contentinnerimg" src="C:\Users\grego\Desktop\pros\sitelayout\imgs\tony.jpg">
+                    <img class="contentinnerimg" src="C:\Users\grego\Desktop\pros\sitelayout\imgs\womanFace.jpg">
+                    <img class="contentinnerimg" src="C:\Users\grego\Desktop\pros\sitelayout\imgs\sunny.png">
+                </div>
+                <div class="contentinnertitle">
+                    bestest
+                </div>
+                <div class="contentinnerwords">
+                    the blurst of times
+                </div>
+                
+            </div>
+
+            <div class="contentinner">
+
+                <div class="contentinnerimgcontainer">
+                    <img class="contentinnerimg" src="">
+                    <img class="contentinnerimg" src="">
+                    <img class="contentinnerimg" src="">
+                </div>
+                <div class="contentinnertitle">
+                    bestest
+                </div>
+                <div class="contentinnerwords">
+                    the blurst of times
+                </div>
+                
+            </div>
+
+            <div class="contentinner">
+
+                <div class="contentinnerimgcontainer">
+                    <img class="contentinnerimg" src="">
+                    <img class="contentinnerimg" src="">
+                    <img class="contentinnerimg" src="">
+                </div>
+                <div class="contentinnertitle">
+                    bestest
+                </div>
+                <div class="contentinnerwords">
+                    the blurst of times
+                </div>
+                
+            </div>
+
+            <div class="contentinner">
+
+                <div class="contentinnerimgcontainer">
+                    <img class="contentinnerimg" src="">
+                    <img class="contentinnerimg" src="">
+                    <img class="contentinnerimg" src="">
+                </div>
+                <div class="contentinnertitle">
+                    bestest
+                </div>
+                <div class="contentinnerwords">
+                    the blurst of times
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+        <div class="endwrapper" style="float: right; font-family: monospace;">
+            <div style="  margin-top: 8px; bottom: 0%; text-align: end; line-height: 1px;"> a dense production / 2024 / blustery.</div>
+            
+        </div>
+</div>
+
+
+<script>
+    function flashing() {
+        
+        setInterval(function () {
+            var fl = document.getElementById("dash");
+            fl.style.color = "black";
+        }, 500);
+
+        setInterval(function () {
+            var fl = document.getElementById("dash");
+            fl.style.color = "white";
+        }, 1000);
+       
+ 
+    };
+    
+    flashing();
+</script>
+
+<script>
+    function coding() {
+
+        c1 = document.getElementById("codes");
+        
+        function entercodes(){
+            c1.innerHTML = "";
+        };
+
+        entercodes();
+    };
+
+    coding();
+</script>
+
+
+</body>
+</html>
