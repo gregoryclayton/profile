@@ -26,9 +26,17 @@
 
         }
 
-        @media screen and (min-width:500px) {
+        @media screen and (max-width:500px) {
             .endwrapper {
-                display:flex;
+                display: none;
+            }
+
+        }
+
+        @media screen and (max-width:1050px) {
+            .contentinnerimg {
+                width: 50px;
+                
             }
 
         }
@@ -56,6 +64,29 @@
 
         .featuresContainer {
             display: grid;
+        }
+
+        .spinner {
+            
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            
+            transition: 0.5s;
+ background-color: ;
+            -webkit-animation: spin 30s infinite linear;
+
+        }
+
+        .spinner:hover {
+            box-shadow: 0px 0px 0px 0px rgba(132, 132, 132, 0.482);
+            transition: 1s;
+            
+        }
+
+        @-webkit-keyframes spin {
+            0% {-webkit-transform: rotate(0deg);}
+            100% {-webkit-transform: rotate(360deg);}
         }
 
         .info {
@@ -130,6 +161,7 @@
             height: 8vh;
             border-style: solid;
             border-width: 1px;
+            border-top-left-radius: 10px;
             margin: 2px;
             margin-right: 6px;
             display: grid;
@@ -144,7 +176,7 @@
             width: 50%;
             height: 8vh;
             border-style: solid;
-           border-top-right-radius: 10px;
+        
             border-width: 1px;
             margin: 2px;
             margin-right: 10px;
@@ -158,7 +190,7 @@
             width: 50%;
             height: 8vh;
             border-style: solid;
-            border-bottom-left-radius: 10px;
+         
             border-width: 1px;
             margin: 2px;
             margin-right: 6px;
@@ -201,7 +233,7 @@
         }
 
         .contentinner {
-            margin-bottom: 30px;
+            height: 22vh;
             padding-top: 15px;
             padding-left: 6px;
         }
@@ -211,10 +243,11 @@
         }
 
         .contentinnerimg {
-            width: 60px;
-            height: 60px;
-            border-radius: 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
             margin: 6px;
+            margin-left: 18px;
         }
 
         .contentinnertitle {
@@ -233,6 +266,13 @@
 
     </style>
 
+<script>
+    function spinswitch() {
+        var d = document.querySelector("spinid");
+        d.innerHTML = "<div style="padding: 50px;">
+                
+    }
+</script>
 
 </head>
 
@@ -255,8 +295,16 @@
 
         <div class="featuresContainer">
 
-            <div class="info"><div style="padding: 50px;"><img src="" style="width: 30px; height: 30px;"><br><br><br>
-                the the eth eth eth eth eth ethh eth eth et heth eth eth et hehe theth eth ethe thet het het heth et het heth eth et he t e he thet heth teheteheth ethe thet<br><br><br>the the eth eth eth eth eth ethh eth eth et heth eth eth et hehe theth eth ethe thet het het heth et het heth eth et he t e he thet heth teheteheth ethe thet<br><br><br>the the eth eth eth eth eth ethh eth eth et heth eth eth et hehe theth eth ethe thet het het heth et het heth eth et he t e he thet heth teheteheth ethe thet<br><br><br>the the eth eth eth eth eth ethh eth eth et heth eth eth et hehe theth eth ethe thet het het heth et het heth eth et he t e he thet heth teheteheth ethe thet<br><br><br>the the eth eth eth eth eth ethh eth eth et heth eth eth et hehe theth eth ethe thet het het heth et het heth eth et he t e he thet heth teheteheth ethe thet<br><br><br>the the eth eth eth eth eth ethh eth eth et heth eth eth et hehe theth eth ethe thet het het heth et het heth eth et he t e he thet heth teheteheth ethe thet<br><br><br></div>
+            <div class="info">
+
+                <div id="spinid">
+                <div style="padding: 50px;">
+                    <img src="C:\Users\grego\Desktop\pros\sitelayout\imgs\moon3.png" class="spinner" style="box-shadow: 2px 1px 10px 1px rgba(171, 171, 171, 0.482);"><br><br><br>
+                writer. developer. friend of the forest.<br> Canada born, raised, and living.<br><br>   
+                Javascript, php, python, c++. Java.
+                </div>
+                </div>
+
             </div>
 
             <div class="content">
@@ -280,9 +328,9 @@
             <div class="contentinner">
 
                 <div class="contentinnerimgcontainer">
-                    <img class="contentinnerimg" src="">
-                    <img class="contentinnerimg" src="">
-                    <img class="contentinnerimg" src="">
+                    <img class="contentinnerimg" src="C:\Users\grego\Desktop\pros\sitelayout\imgs\tony.jpg">
+                    <img class="contentinnerimg" src="C:\Users\grego\Desktop\pros\sitelayout\imgs\womanFace.jpg">
+                    <img class="contentinnerimg" src="C:\Users\grego\Desktop\pros\sitelayout\imgs\sunny.png">
                 </div>
                 <div class="contentinnertitle">
                     bestest
@@ -345,14 +393,11 @@
 
     </div>
 
-    <!--
-    <div class="endwrapper" style="float: right;">
-            <div style="  margin-top: 8px; bottom: 0%; text-align: end; line-height: 1px;">//  a dense production  /</div>
-            <div style="  margin-top: 8px; margin-bottom: 8px; bottom: 0%; text-align: end; line-height: 1px; ">/</div>
-            <div style="  margin-top: 8px; margin-bottom: 8px; bottom: 0%; text-align: end; line-height: 1px;  ">/ 2024 // blustery . </div>
+        <div class="endwrapper" style="float: right; font-family: monospace;">
+            <div style="  margin-top: 8px; bottom: 0%; text-align: end; line-height: 1px;"> a dense production / 2024 / blustery.</div>
+            
         </div>
 </div>
-    -->
 
 
 <script>
