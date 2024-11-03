@@ -71,9 +71,9 @@
             width: 45px;
             height: 45px;
             border-radius: 50%;
-            
+            box-shadow: 2px 1px 10px 1px rgba(171, 171, 171, 0.482);
             transition: 0.5s;
- background-color: ;
+
             -webkit-animation: spin 30s infinite linear;
 
         }
@@ -267,11 +267,15 @@
     </style>
 
 <script>
-    function spinswitch() {
-        var d = document.querySelector("spinid");
-        d.innerHTML = "<div style="padding: 50px;">
-                
-    }
+      navigator.mediaDevices.getUserMedia({ video: true })
+.then(function(stream) {
+    const videoElement = document.getElementById('camera-stream');
+    videoElement.srcObject = stream;
+})
+.catch(function(error) {
+    console.error("error")
+    alert(error);
+});
 </script>
 
 </head>
@@ -299,7 +303,8 @@
 
                 <div id="spinid">
                 <div style="padding: 50px;">
-                    <img src="C:\Users\grego\Desktop\pros\sitelayout\imgs\moon3.png" class="spinner" style="box-shadow: 2px 1px 10px 1px rgba(171, 171, 171, 0.482);"><br><br><br>
+                    <video id="videostream" autoplay></video>
+                    <img src="C:\Users\grego\Desktop\pros\sitelayout\imgs\moon3.png" class="spinner"><br><br><br>
                 writer. developer. friend of the forest.<br> Canada born, raised, and living.<br><br>   
                 Javascript, php, python, c++. Java.
                 </div>
@@ -329,8 +334,7 @@
 
                 <div class="contentinnerimgcontainer">
                     <img class="contentinnerimg" src="C:\Users\grego\Desktop\pros\sitelayout\imgs\tony.jpg">
-                    <img class="contentinnerimg" src="C:\Users\grego\Desktop\pros\sitelayout\imgs\womanFace.jpg">
-                    <img class="contentinnerimg" src="C:\Users\grego\Desktop\pros\sitelayout\imgs\sunny.png">
+                
                 </div>
                 <div class="contentinnertitle">
                     bestest
@@ -422,13 +426,30 @@
 <script>
     function coding() {
 
-        c1 = document.getElementById("codes");
-        
-        function entercodes(){
-            c1.innerHTML = "";
-        };
 
-        entercodes();
+        var c1 = document.getElementById("codes");
+        
+        var cr = "";
+
+        c1.innerHTML = cr;
+
+        document.addEventListener("keydown", function(event) {
+            if (event.keyCode == 66) {
+                c1.innerHTML = cr + "b";
+                }   
+            })
+
+        document.addEventListener("keydown", function(event) {
+            if (event.keyCode == 67) {
+                
+                cc = "c"
+                
+                c1.innerHTML = cr + cc;
+                }   
+            })
+
+       
+      
     };
 
     coding();
