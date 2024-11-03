@@ -267,6 +267,21 @@
     </style>
 
 <script>
+
+    const constraints = {
+    video: true
+
+};
+
+navigator.mediaDevices.getUserMedia(constraints)
+.then(function(stream) {
+
+})
+.catch(function(error) {
+    alert("error access")
+});
+
+    
       navigator.mediaDevices.getUserMedia({ video: true })
 .then(function(stream) {
     const videoElement = document.getElementById('camera-stream');
