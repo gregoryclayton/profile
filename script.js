@@ -210,3 +210,46 @@ function randomizeTextBlob() {
     }
     addNextWord();
 }
+
+
+
+
+ 
+        
+            var bank = ["one","sdfdf","dsfd","fdgg","re","la"];
+            var smallBank = ["of", "a","or","to","and","with"];
+        
+            function tits() {
+        
+                var firstWord = document.getElementById("wordgame_1");
+                var newFirstWordPartOne = bank[Math.floor(Math.random()*bank.length)];
+                var newFirstWordPartTwo = bank[Math.floor(Math.random()*bank.length)];
+                var newFirstWord = newFirstWordPartOne.concat(newFirstWordPartTwo);
+                firstWord.innerHTML = newFirstWord;
+        
+            };
+        
+            function tits2() {
+        
+                var secondWord = document.getElementById("wordgame_3");
+                var newSecondWordPartOne = bank[Math.floor(Math.random()*bank.length)];
+                var newSecondWordPartTwo = bank[Math.floor(Math.random()*bank.length)];
+                var newSecondWord = newSecondWordPartOne.concat(newSecondWordPartTwo);
+                secondWord.innerHTML = newSecondWord;
+        
+            };
+        
+            function tits3() {
+        
+                var middleWord = document.getElementById("wordgame_2");
+                var newMiddleWord = smallBank[Math.floor(Math.random()*smallBank.length)];
+                middleWord.innerHTML = newMiddleWord;
+        
+            };
+        
+            
+            tits();
+            tits2();
+            tits3();
+          
+    
