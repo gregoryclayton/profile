@@ -14,7 +14,7 @@
     <div class="overlay"></div>
     
     <!-- Top-left menu button and dropdown -->
-    <div class="menu-container">
+    <div class="menu-container" style="display:flex;">
         <button class="menu-button" id="menuButton" aria-label="Menu">
             <span class="menu-icon"></span>
         </button>
@@ -26,6 +26,12 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+        </div>
+
+         <div class="wordgamebox">
+       <i> <div class="wordgame" style="margin-left: 22px;" id="wordgame_1" onclick="tits2()">words </div></i>
+        <i><div class="wordgame" id="wordgame_2" onclick="tits3()">words </div></i>
+        <i><div class="wordgame" id="wordgame_3" onclick="tits()">words</div></i>
         </div>
     </div>
     
@@ -56,7 +62,7 @@
 
               <div class="card" style="background-color: rgba(0, 0, 0, 0);">
                
-                <p>Canadian-born creative mainly operating within the realms of digital video production, web development, industrial fabrication, and art installation.</p>
+                <p style="font-family:monospace;">Canadian-born creative mainly operating within the realms of digital video production, web development, industrial fabrication, and art installation.</p>
                
             </div>
 
@@ -69,20 +75,23 @@
             
             <div class="card">
                 <h2>Digital Artist Database</h2>
-                <p>The ultimate online resource for artistic research, development, and exploration.</p>
-            <div class="visitBtn">visit</div>
+                <p style="font-family:monospace;">The ultimate online resource for artistic research, development, and exploration.</p>
+                <br>
+                <div class="visitBtn"><i>visit</i></div>
             </div>
             
             <div class="card">
                 <h2>Density</h2>
-                <p>Art & design within the vectorspace of all things.</p>
-                 <div class="visitBtn">visit</div>
+                <p style="font-family:monospace;">Art & design within the vectorspace of all things.</p>
+                <br> 
+               <div class="visitBtn"><i>visit</i></div>
             </div>
             
             <div class="card">
                 <h2>Travelhacks</h2>
-                <p>Arund the world in style, cheap & fun, yuor go-to travel blog for all the tips no one tells you.</p>
-                 <div class="visitBtn">visit</div>
+                <p style="font-family:monospace;">Around the world the scenic route, your go-to travel blog off the beaten path.</p>
+                <br>
+               <div class="visitBtn"><i>visit</i></div>
             </div>
         <div class="card" id="titlecards" style="text-align: end; background-color: white; color:black;">
                 <h2 style="color:black">books</h2>
@@ -90,7 +99,7 @@
             </div>
             
             <div class="card">
-                <h2>Collecting</h2>
+                <h2><i>Collecting</i></h2>
                 <p>Some illusions create a sense of depth where none exists.</p>
             </div>
             
@@ -319,5 +328,50 @@
     </div>
 
     <script src="script.js"></script>
+<script>
+
+ 
+        
+            var bank = ["one","sdfdf","dsfd","fdgg","re","la"];
+            var smallBank = ["of", "a","or","to","and","with"];
+        
+            function tits() {
+        
+                var firstWord = document.getElementById("wordgame_1");
+                var newFirstWordPartOne = bank[Math.floor(Math.random()*bank.length)];
+                var newFirstWordPartTwo = bank[Math.floor(Math.random()*bank.length)];
+                var newFirstWord = newFirstWordPartOne.concat(newFirstWordPartTwo);
+                firstWord.innerHTML = newFirstWord;
+        
+            };
+        
+            function tits2() {
+        
+                var secondWord = document.getElementById("wordgame_3");
+                var newSecondWordPartOne = bank[Math.floor(Math.random()*bank.length)];
+                var newSecondWordPartTwo = bank[Math.floor(Math.random()*bank.length)];
+                var newSecondWord = newSecondWordPartOne.concat(newSecondWordPartTwo);
+                secondWord.innerHTML = newSecondWord;
+        
+            };
+        
+            function tits3() {
+        
+                var middleWord = document.getElementById("wordgame_2");
+                var newMiddleWord = smallBank[Math.floor(Math.random()*smallBank.length)];
+                middleWord.innerHTML = newMiddleWord;
+        
+            };
+        
+            
+            tits();
+            tits2();
+            tits3();
+          
+        </script>
+
+
+</script>
+
 </body>
 </html>
