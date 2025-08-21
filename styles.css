@@ -16,6 +16,34 @@ body {
     scroll-behavior: smooth; /* Enable smooth scrolling for anchor links */
 }
 
+.wordgamebox {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .wordgamebox {
+      position: absolute;
+      top:3250%;
+    }
+  }
+
+.wordgame {
+    margin-left:5px;
+    font-family: monospace;
+    font-size: 8px;
+    color: rgba(255, 255, 255, 0.612);
+}
+
+.wordgame:hover {
+    font-size: 8.5px;
+    cursor: default;
+    color: white;
+}
+
 /* Creating a background container for parallax */
 .parallax-bg {
     position: fixed;
@@ -252,6 +280,11 @@ p {
     top: 12vw;
     left: 12vw;
     z-index: 200;
+}
+
+.visitBtn {
+    margin-left:15px;
+    text-decoration: underline;
 }
 
 .menu-button {
@@ -633,4 +666,5 @@ p {
    
      transition: 1s;
 }
+
 
