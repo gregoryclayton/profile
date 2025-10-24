@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const interval = 50;
     // Set the background image if not already set
     if (!parallaxBg.style.backgroundImage || parallaxBg.style.backgroundImage === 'none') {
-        parallaxBg.style.backgroundImage = 'url("iluusion.jpg")';
+        parallaxBg.style.backgroundImage = 'url("illusion2.png")';
     }
     function updateFilters() {
         if (intensity >= maxIntensity) increasing = false;
